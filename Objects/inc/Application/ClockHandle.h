@@ -1,4 +1,10 @@
-#ifndef CLOCKHANDLE_H
+/*
+ * File: ClockHandle.h
+  * Author: Lang Van Toan
+ * Description: This header file defines enums and function prototypes related to handling a clock system and servo motor states on an STM32F10x microcontroller.
+ */
+ 
+ #ifndef CLOCKHANDLE_H
 #define CLOCKHANDLE_H
 
 #include "main.h"

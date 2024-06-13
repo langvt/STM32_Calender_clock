@@ -1,3 +1,11 @@
+/*
+ * File: TIM.h
+ * Author: Lang Van Toan
+ * Description: This file contains the definitions and declarations necessary for configuring and initializing 
+ *              Timer 2 (TIM2) and PWM (Pulse Width Modulation) on an STM32F10x microcontroller. 
+ *              It includes macro definitions for timer and GPIO configuration, and function prototypes for 
+ *              initializing the timer and PWM functionality.
+ */
 #ifndef TIM_H
 #define TIM_H
 /** Includes ---------------------------------------------------------------- */

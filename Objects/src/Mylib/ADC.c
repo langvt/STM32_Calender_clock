@@ -1,3 +1,10 @@
+/*
+ * File: ADC.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of the function for configuring the Analog-to-Digital Converter (ADC) 
+ *              peripheral on an STM32F10x microcontroller. The function initializes the GPIO pin for ADC input, configures 
+ *              the ADC module for single-channel, single-conversion mode, and enables the ADC peripheral.
+ */
 #include "ADC.h"
 
 /*

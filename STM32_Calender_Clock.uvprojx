@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\Mylib;.\Application</IncludePath>
+              <IncludePath>..\STM32_Calender_clock;.\Objects\inc\Mylib;.\Objects\inc\Application</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -387,52 +387,52 @@
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Mylib\main.c</FilePath>
+              <FilePath>.\main.c</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Mylib</GroupName>
+          <GroupName>MyLib</GroupName>
           <Files>
             <File>
-              <FileName>systick.c</FileName>
+              <FileName>ADC.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Mylib\systick.c</FilePath>
-            </File>
-            <File>
-              <FileName>I2C.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Mylib\I2C.c</FilePath>
-            </File>
-            <File>
-              <FileName>DS3231.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Mylib\DS3231.c</FilePath>
+              <FilePath>.\Objects\src\Mylib\ADC.c</FilePath>
             </File>
             <File>
               <FileName>Button.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Mylib\Button.c</FilePath>
+              <FilePath>.\Objects\src\Mylib\Button.c</FilePath>
+            </File>
+            <File>
+              <FileName>DS3231.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Objects\src\Mylib\DS3231.c</FilePath>
+            </File>
+            <File>
+              <FileName>I2C.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Objects\src\Mylib\I2C.c</FilePath>
             </File>
             <File>
               <FileName>LiquidCrystal_I2C.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Mylib\LiquidCrystal_I2C.c</FilePath>
-            </File>
-            <File>
-              <FileName>TIM.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Mylib\TIM.c</FilePath>
+              <FilePath>.\Objects\src\Mylib\LiquidCrystal_I2C.c</FilePath>
             </File>
             <File>
               <FileName>servo.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Mylib\servo.c</FilePath>
+              <FilePath>.\Objects\src\Mylib\servo.c</FilePath>
             </File>
             <File>
-              <FileName>ADC.c</FileName>
+              <FileName>systick.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Mylib\ADC.c</FilePath>
+              <FilePath>.\Objects\src\Mylib\systick.c</FilePath>
+            </File>
+            <File>
+              <FileName>TIM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Objects\src\Mylib\TIM.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -440,19 +440,19 @@
           <GroupName>Application</GroupName>
           <Files>
             <File>
+              <FileName>ADC_Utilities.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Objects\src\Application\ADC_Utilities.c</FilePath>
+            </File>
+            <File>
               <FileName>ButtonCallBack.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Application\ButtonCallBack.c</FilePath>
+              <FilePath>.\Objects\src\Application\ButtonCallBack.c</FilePath>
             </File>
             <File>
               <FileName>ClockHandle.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\Application\ClockHandle.c</FilePath>
-            </File>
-            <File>
-              <FileName>ADC_Utilities.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Application\ADC_Utilities.c</FilePath>
+              <FilePath>.\Objects\src\Application\ClockHandle.c</FilePath>
             </File>
           </Files>
         </Group>

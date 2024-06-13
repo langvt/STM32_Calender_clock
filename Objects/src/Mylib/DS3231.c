@@ -1,3 +1,12 @@
+/*
+ * File: DS3231.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of functions to interact with the DS3231 Real-Time Clock (RTC) module using I2C communication.
+ * It includes functions for initializing the DS3231, setting and getting time and date values (seconds, minutes, hours, day, date, month, year), setting and getting alarm values (hour and minute), 
+ * and retrieving the temperature readings from the DS3231.
+ */
+
+
 /** Includes ---------------------------------------------------------------- */	
 #include "DS3231.h"
 
@@ -5,6 +14,7 @@
 * Function: ds3231_Init
 * Description: Initializes the DS3231 module by configuring the I2C interface.
 * Input: None
+
 * Output: None
 */
 void ds3231_Init(void)

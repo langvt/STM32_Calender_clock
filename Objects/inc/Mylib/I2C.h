@@ -1,3 +1,10 @@
+/*
+ * File: I2C.h
+ * Author: Lang Van Toan
+ * Description: This header file contains the declarations and definitions for the I2C communication functions. 
+ * It includes the necessary includes, macro definitions for configuring the I2C peripheral, and prototypes for the public functions.
+ */
+ 
 #ifndef I2C_H
 #define I2C_H
 

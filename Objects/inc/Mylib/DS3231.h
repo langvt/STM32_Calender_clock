@@ -1,4 +1,10 @@
-
+/*
+ * File: DS3231.h
+ * Author: Lang Van Toan
+ * Description: This header file contains definitions, structures, and function prototypes for interfacing with the DS3231 Real-Time Clock (RTC) module using I2C communication. 
+ * It includes macros for register addresses, data structures for time and temperature, and function declarations for initializing the DS3231, setting and getting time and date values, 
+ * setting and getting alarm values, and retrieving temperature readings.
+ */
 
 #ifndef DS3231_H
 #define DS3231_H

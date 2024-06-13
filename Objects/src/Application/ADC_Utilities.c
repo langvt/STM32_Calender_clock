@@ -1,3 +1,10 @@
+/*
+ * File: ADC_Utilities.h
+  * Author: Lang Van Toan
+ * Description: This source file implements functions to handle ADC (Analog-to-Digital Converter) utilities
+ *              on an STM32F10x microcontroller. It includes functions for ADC initialization, handling ADC conversions,
+ *              and controlling a servo motor based on ADC values.
+ */
 #include "ADC_Utilities.h"
 
 extern Servo sv1;

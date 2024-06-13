@@ -1,3 +1,10 @@
+/*
+ * File: servo.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of functions for controlling a servo motor using an STM32F10x microcontroller. 
+ *              It includes a mapping function to convert angles to PWM duty cycles, a function to set the servo angle, 
+ *              and a function to initialize the servo with a specific timer and channel.
+ */
 #include "servo.h"
 
 /*

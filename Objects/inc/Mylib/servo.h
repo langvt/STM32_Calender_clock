@@ -1,3 +1,9 @@
+/*
+ * File: servo.h
+ * Author: Lang Van Toan
+ * Description: This header file defines the structure and function prototypes for controlling a servo motor using an STM32F10x microcontroller.
+ *              It includes the definition of the Servo structure and the declarations for initializing the servo and setting its angle.
+ */
 #ifndef SERVO_H
 #define SERVO_H
 

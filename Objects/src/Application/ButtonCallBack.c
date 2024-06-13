@@ -1,4 +1,12 @@
-#include "ButtonCallBack.h"
+/*
+ * File: ButtonCallBack.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of callback functions for handling button press events 
+ *              on an STM32F10x microcontroller. It includes functions to configure GPIO pins for buttons, 
+ *              initialize button structures, and manage different types of button press actions such as 
+ *              short press, long press, and repeating press events.
+ */
+ #include "ButtonCallBack.h"
 
 extern Button_Typedef BTN_DOWN, BTN_OK, BTN_UP;
 extern ClockState Clock_State;

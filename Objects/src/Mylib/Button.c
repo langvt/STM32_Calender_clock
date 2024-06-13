@@ -1,5 +1,11 @@
-#include "Button.h"
+/*
+ * File: Button.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of functions for handling button press events on an STM32F10x microcontroller. 
+ * It includes debounce handling, state management, and various callback functions for different button press actions such as short press, long press, and repeated press.
+ */
 
+#include "Button.h"
 
 /*
 * Function: btn_pressing_callback
@@ -87,19 +93,19 @@ void button_handle(Button_Typedef *ButtonX)
 				/*------button pressed------------*/
 			{
 				ButtonX -> flag_repeat = 1;
-				ButtonX -> is_press_timeout = 1;				// variable for long press: when button is pressed, start handle
-				btn_pressing_callback(ButtonX); 					// callback button pressed
-				ButtonX -> time_start_press = getTick();		// variable for quick press 1s: start timing when button is pressed
-				ButtonX -> time_start_press_repeat = getTick(); // set time for countinous button press
+				ButtonX -> is_press_timeout = 1;						// variable for long press: when button is pressed, start handle
+				btn_pressing_callback(ButtonX); 						// callback button pressed
+				ButtonX -> time_start_press = getTick();				// variable for quick press 1s: start timing when button is pressed
+				ButtonX -> time_start_press_repeat = getTick(); 	// set time for countinous button press
 			}
 			else	/*----------------- button released ---------------------*/
 			{
 				if(getTick() - ButtonX -> time_start_press <= 1000 )
 				{
-					btn_press_short_callback(ButtonX);  		// callback button short press and release
+					btn_press_short_callback(ButtonX);  				// callback button short press and release
 				}
-				//btn_release_callback(ButtonX ); 				// callback button released
-				ButtonX -> is_press_timeout = 0; 				// when button is released, no longer signals for long press
+				//btn_release_callback(ButtonX ); 						// callback button released
+				ButtonX -> is_press_timeout = 0; 						// when button is released, no longer signals for long press
 				ButtonX -> flag_repeat = 0;
 			}	
 			ButtonX -> btn_last = ButtonX -> btn_current;
@@ -109,13 +115,13 @@ void button_handle(Button_Typedef *ButtonX)
 	if(ButtonX -> is_press_timeout == 1 &&  ( getTick() -  ButtonX -> time_start_press >= 2000)) 
 	/*--------- // when there is button press and condition is met----------------*/
 	{
-		btn_press_timeout_callback(ButtonX );					// callback button long press
+		btn_press_timeout_callback(ButtonX );							// callback button long press
 		 ButtonX -> is_press_timeout = 0;
 	}
 	/*----------------------------------- Handle continuous increase on long press---------------*/
 	if(ButtonX ->flag_repeat == 1 && (getTick() - ButtonX -> time_start_press_repeat >= 400))
 	{
-		btn_press_timeout_repeat_callback(ButtonX);			// callback button increase value and long press
+		btn_press_timeout_repeat_callback(ButtonX);				// callback button increase value and long press
 		ButtonX -> time_start_press_repeat = getTick();
 	}
 }

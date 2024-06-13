@@ -1,3 +1,9 @@
+/*
+ * File: LiquidCrystal_I2C.h
+ * Author: Lang van Toan
+ * Description: This header file contains the declarations for functions and structures related to controlling an LCD display via I2C communication on an STM32F10x microcontroller. 
+ * It defines commands, flags, and function prototypes for initializing the LCD, controlling display settings, setting cursor positions, managing backlight, and printing characters and strings.
+ */
 #ifndef LIQUIDCRYSTAL_I2C_H
 #define LIQUIDCRYSTAL_I2C_H
 

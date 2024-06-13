@@ -1,4 +1,11 @@
-/** Includes ---------------------------------------------------------------- */	
+/*
+ * File: I2C.c
+ * Author: Lang Van Toan
+ * Description: This source file contains the implementation of functions for initializing and communicating over the I2C bus. 
+ * It provides functions to configure the I2C peripheral, generate start and stop conditions, send addresses and data, and receive data from I2C devices.
+ */
+ 
+ /** Includes ---------------------------------------------------------------- */	
 #include "I2C.h"
 
 /** Private function prototypes --------------------------------------------- */
@@ -119,11 +126,13 @@ void I2C_Read_No_Reg(uint8_t Address, uint8_t *Data)
 */
 void I2c_Start(void)
 {
-	// Wait until I2Cx is not busy anymore
-	while (I2C_GetFlagStatus(I2Cx, I2C_FLAG_BUSY));
+
 	
 	// Generate start condition
 	I2C_GenerateSTART(I2Cx, ENABLE);
+	
+		// Wait until I2Cx is not busy anymore
+	while (I2C_GetFlagStatus(I2Cx, I2C_FLAG_BUSY));
 	
 	// Wait for I2C EV5. 
 	// It means that the start condition has been correctly released 

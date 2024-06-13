@@ -1,3 +1,9 @@
+/*
+ * File: Utilities.h
+  * Author: Lang Van Toan
+ * Description: This header file declares constants, enums, and function prototypes related to ADC (Analog-to-Digital Converter)
+ *              utilities on an STM32F10x microcontroller.
+ */
 #ifndef UTILITIES_H
 #define UTILITIES_H
 /** Includes ---------------------------------------------------------------- */

@@ -1,3 +1,8 @@
+/*
+ * File: main.h
+  * Author: Lang Van Toan
+ * Description: Header file that includes necessary libraries and modules for an STM32F10x microcontroller project.
+ */
 #ifndef MAIN_H
 #define MAIN_H 
 

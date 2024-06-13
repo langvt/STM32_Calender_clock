@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\STM32_Calender_Clock.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\STM32_Calender_Clock.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Fri Jun  7 20:51:37 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6190004: Last Updated: Thu Jun 13 08:49:49 2024
 <BR><P>
 <H3>Maximum Stack Usage =        324 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1092,9 +1092,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOLED_Config
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 <LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM_Config
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Config
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
 <P><STRONG><a name="[d4]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, stm32f10x_gpio.o(.text.GPIO_ReadInputDataBit))
@@ -1149,7 +1149,7 @@ Global Symbols
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_Init
 </UL>
 
-<P><STRONG><a name="[b3]"></a>I2C_GenerateSTART</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, stm32f10x_i2c.o(.text.I2C_GenerateSTART))
+<P><STRONG><a name="[b2]"></a>I2C_GenerateSTART</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, stm32f10x_i2c.o(.text.I2C_GenerateSTART))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = I2C_GenerateSTART
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2c_Start
@@ -1161,7 +1161,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2c_Stop
 </UL>
 
-<P><STRONG><a name="[b2]"></a>I2C_GetFlagStatus</STRONG> (Thumb, 98 bytes, Stack size 20 bytes, stm32f10x_i2c.o(.text.I2C_GetFlagStatus))
+<P><STRONG><a name="[b3]"></a>I2C_GetFlagStatus</STRONG> (Thumb, 98 bytes, Stack size 20 bytes, stm32f10x_i2c.o(.text.I2C_GetFlagStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = I2C_GetFlagStatus
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2c_Start
@@ -1252,8 +1252,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_CheckEvent
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
 </UL>
 
@@ -1271,11 +1271,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = I2c_Start &rArr; I2C_CheckEvent
 </UL>
 <BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_CheckEvent
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTART
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTART
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
 </UL>
 
@@ -1284,8 +1284,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTOP
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
 </UL>
 
@@ -1295,8 +1295,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_CheckEvent
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_No_Reg
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
 </UL>
 
@@ -1328,8 +1328,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RCC_APB2PeriphClockCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOLED_Config
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 <LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Config
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Config
 </UL>
 
 <P><STRONG><a name="[a5]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 370 bytes, Stack size 24 bytes, stm32f10x_rcc.o(.text.RCC_GetClocksFreq))
@@ -1499,8 +1499,8 @@ Global Symbols
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btn_press_timeout_callback
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btn_press_short_callback
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btn_pressing_callback
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getTick
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buttonCallBackHandle
 </UL>
@@ -1509,9 +1509,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
 <LI>Call Chain = checkAlarm &rArr; lcd_printf &rArr; vsprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_UtilitiesHandle
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_UtilitiesHandle
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servo_Write
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_printf
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_set_cursor
@@ -1541,10 +1541,10 @@ Global Symbols
 <P><STRONG><a name="[db]"></a>clockInit</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, clockhandle.o(.text.clockInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = clockInit &rArr; lcd_init &rArr; I2C_Config &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Utilities_Init
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOLED_Config
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servo_Init
+<BR>[Calls]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOLED_Config
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Utilities_Init
 <LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Init
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;servo_Init
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 <LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_Init
 </UL>
@@ -1572,8 +1572,8 @@ Global Symbols
 <P><STRONG><a name="[e0]"></a>ds3231_getAlarmHour</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getAlarmHour))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getAlarmHour &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1581,8 +1581,8 @@ Global Symbols
 <P><STRONG><a name="[e2]"></a>ds3231_getAlarmMin</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getAlarmMin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getAlarmMin &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1590,8 +1590,8 @@ Global Symbols
 <P><STRONG><a name="[e3]"></a>ds3231_getDate</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getDate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getDate &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1599,8 +1599,8 @@ Global Symbols
 <P><STRONG><a name="[e4]"></a>ds3231_getDay</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getDay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getDay &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1615,8 +1615,8 @@ Global Symbols
 <P><STRONG><a name="[e5]"></a>ds3231_getHours</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getHours))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getHours &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1624,8 +1624,8 @@ Global Symbols
 <P><STRONG><a name="[e6]"></a>ds3231_getMinutes</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getMinutes))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getMinutes &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1633,8 +1633,8 @@ Global Symbols
 <P><STRONG><a name="[e7]"></a>ds3231_getMonth</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getMonth))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getMonth &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1642,8 +1642,8 @@ Global Symbols
 <P><STRONG><a name="[e8]"></a>ds3231_getSeconds</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getSeconds))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getSeconds &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1689,8 +1689,8 @@ Global Symbols
 <P><STRONG><a name="[f1]"></a>ds3231_getYear</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_getYear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_getYear &rArr; I2C_Read_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Read_Reg
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BCD2_Decimal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_getTime
 </UL>
@@ -1698,8 +1698,8 @@ Global Symbols
 <P><STRONG><a name="[f2]"></a>ds3231_setAlarmHour</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setAlarmHour))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setAlarmHour &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1707,8 +1707,8 @@ Global Symbols
 <P><STRONG><a name="[f4]"></a>ds3231_setAlarmMin</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setAlarmMin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setAlarmMin &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1716,8 +1716,8 @@ Global Symbols
 <P><STRONG><a name="[f5]"></a>ds3231_setDate</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setDate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setDate &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1725,8 +1725,8 @@ Global Symbols
 <P><STRONG><a name="[f6]"></a>ds3231_setDay</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setDay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setDay &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1734,8 +1734,8 @@ Global Symbols
 <P><STRONG><a name="[f7]"></a>ds3231_setHours</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setHours))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setHours &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1743,8 +1743,8 @@ Global Symbols
 <P><STRONG><a name="[f8]"></a>ds3231_setMinutes</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setMinutes))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setMinutes &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1752,8 +1752,8 @@ Global Symbols
 <P><STRONG><a name="[f9]"></a>ds3231_setMonth</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setMonth))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setMonth &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1761,8 +1761,8 @@ Global Symbols
 <P><STRONG><a name="[fa]"></a>ds3231_setSeconds</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setSeconds))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setSeconds &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1786,8 +1786,8 @@ Global Symbols
 <P><STRONG><a name="[fb]"></a>ds3231_setYear</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ds3231.o(.text.ds3231_setYear))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = ds3231_setYear &rArr; I2C_Write_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Write_Reg
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Decimal2BCD
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ds3231_setTime
 </UL>
@@ -1805,8 +1805,8 @@ Global Symbols
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;settingTimeBlink
 <LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clockTimeUpdate
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;resetTimeStart
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;button_handle
 <LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay_Ms
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;button_handle
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;checkAlarm
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clockHandle
 </UL>
@@ -2139,20 +2139,6 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[ba]"></a>SysTick_Config</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, systick.o(.text.SysTick_Config))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysTick_Config &rArr; __NVIC_SetPriority
-</UL>
-<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
-</UL>
-<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystickInit
-</UL>
-
-<P><STRONG><a name="[bb]"></a>__NVIC_SetPriority</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, systick.o(.text.__NVIC_SetPriority))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
-</UL>
-
 <P><STRONG><a name="[fe]"></a>lcd_send_cmd</STRONG> (Thumb, 148 bytes, Stack size 24 bytes, liquidcrystal_i2c.o(.text.lcd_send_cmd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = lcd_send_cmd &rArr; I2C_Write_No_Reg &rArr; I2c_Transmit &rArr; I2C_CheckEvent
 </UL>
@@ -2172,6 +2158,20 @@ Local Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear_display
+</UL>
+
+<P><STRONG><a name="[ba]"></a>SysTick_Config</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, systick.o(.text.SysTick_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SysTick_Config &rArr; __NVIC_SetPriority
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystickInit
+</UL>
+
+<P><STRONG><a name="[bb]"></a>__NVIC_SetPriority</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, systick.o(.text.__NVIC_SetPriority))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
 </UL>
 
 <P><STRONG><a name="[b8]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_stm32f10x.o(.text.SetSysClock))

@@ -1,3 +1,10 @@
+/*
+ * File: Button.h
+ * Author: Lang Van Toan
+ * Description: This header file contains the declarations for functions and structures related to handling buttons on an STM32F10x microcontroller. 
+ * It defines a structure representing a button and declares functions for initializing buttons, handling button events, and callback functions for different button press actions.
+ */
+ 
 #ifndef BUTTON_H
 #define BUTTON_H
 

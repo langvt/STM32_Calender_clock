@@ -1,3 +1,11 @@
+/*
+ * File: TIM.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of functions for configuring and initializing Timer 2 (TIM2) 
+ *              and PWM (Pulse Width Modulation) on an STM32F10x microcontroller. It includes functions to set up 
+ *              the timer for generating a PWM signal with a frequency of 50Hz, configuring the GPIO for PWM output, 
+ *              and initializing both the timer and PWM configurations.
+ */
 #include "TIM.h"
 
 // create fPWM= 50hz, ARR = 20000 (), PSC = 72

@@ -1,15 +1,16 @@
+/*
+ * File: ClockHandle.c
+  * Author: Lang Van Toan
+ * Description: This source file contains implementations of functions related to handling a clock system
+ *              and managing a servo motor state on an STM32F10x microcontroller.
+ */
 #include "ClockHandle.h"
-
-
 
 LiquidCrystal_I2C lcd;
 Time time;
 extern Temp temp;
 ClockState Clock_State = NORMAL_STATE;
 Servo sv1;
-
-
-
 
 const char* arrDayOfWeek [] = {"SUN", "MON", "TUE", "WED" , "THU", "FRI", "SAT"};
 

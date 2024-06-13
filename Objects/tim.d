@@ -1,4 +1,4 @@
-./objects/tim.o: Mylib\TIM.c Mylib\TIM.h \
+./objects/tim.o: Objects\src\Mylib\TIM.c Objects\inc\Mylib\TIM.h \
   C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_tim.h \
   C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include\stm32f10x.h \
   RTE\_Target_1\RTE_Components.h \
@@ -14,10 +14,15 @@
   C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_i2c.h \
   C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\stm32f10x_rcc.h \
   C:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc\misc.h \
-  Mylib\main.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h Mylib\I2C.h \
-  Mylib\ADC.h Mylib\systick.h Mylib\Servo.h Mylib\LiquidCrystal_I2C.h \
+  ..\STM32_Calender_clock\main.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  Objects\inc\Mylib\I2C.h Objects\inc\Mylib\ADC.h \
+  Objects\inc\Mylib\systick.h Objects\inc\Mylib\Servo.h \
+  Objects\inc\Mylib\LiquidCrystal_I2C.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h Mylib\DS3231.h \
-  Mylib\Button.h Application\ButtonCallBack.h Application\ClockHandle.h \
-  Application\ADC_Utilities.h
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  Objects\inc\Mylib\DS3231.h Objects\inc\Mylib\Button.h \
+  Objects\inc\Application\ButtonCallBack.h \
+  Objects\inc\Application\ClockHandle.h \
+  Objects\inc\Application\ADC_Utilities.h

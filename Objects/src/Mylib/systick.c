@@ -1,3 +1,9 @@
+/*
+ * File: systick.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of functions to initialize and handle the SysTick timer on an STM32F10x microcontroller. 
+ * It includes functions for generating delays and retrieving the current tick count.
+ */
 #include "systick.h"
 
 volatile uint32_t msTick; // Global variable to store the tick count in milliseconds

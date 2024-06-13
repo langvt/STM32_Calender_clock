@@ -1,5 +1,9 @@
-
-
+/*
+ * File: LiquidCrystal_I2C.c
+ * Author: Lang Van Toan
+ * Description: This file contains the implementation of low-level functions for controlling an LCD display via I2C communication on an STM32F10x microcontroller. 
+ * It includes functions for sending commands and data to the LCD, initializing the display, setting cursor positions, managing display settings, and controlling backlight.
+ */
 #include "LiquidCrystal_I2C.h"
 
 /************************ Low Level Function ***************************************************************/
