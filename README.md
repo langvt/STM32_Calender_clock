@@ -1,6 +1,6 @@
 # STM32_Calender_clock
 
-![image]()
+![https://github.com/langvt/STM32_Calender_clock/blob/main/block_diagram.jpg?raw=true]()
 
 This project implements a door control system using RFID technology, STM32 microcontroller, SPI communication, and an SDCard for storage. When a valid RFID ID is detected, the system uses PWM to control a servo motor, opening the door by 90 degrees.
 
