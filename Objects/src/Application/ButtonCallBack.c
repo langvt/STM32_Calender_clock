@@ -41,11 +41,11 @@ void btn_pressing_callback(Button_Typedef *ButtonX)
 /*
 * Function: btn_press_short_callback
 * Description: Callback function invoked when a button is pressed briefly.
+* 					This function transitions the clock state based on the pressed button and resets the time start.
 * Input:
 *   - Button_Typedef *ButtonX: Pointer to the button structure representing the pressed button.
 * Output: None
 * 
-* This function transitions the clock state based on the pressed button and resets the time start.
 */
 void btn_press_short_callback(Button_Typedef *ButtonX)			
 {
@@ -171,10 +171,10 @@ void buttonCallBackInit(void)
 /*
 * Function: buttonCallBackHandle
 * Description: Handles button callback events.
+* 					This function handles button callback events by calling the button_handle function for each button.
 * Input: None
 * Output: None
 * 
-* This function handles button callback events by calling the button_handle function for each button.
 */
 void buttonCallBackHandle(void)
 {

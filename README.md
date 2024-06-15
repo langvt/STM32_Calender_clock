@@ -1,8 +1,12 @@
 # STM32_Calender_clock
 
-![https://github.com/langvt/STM32_Calender_clock/blob/main/block_diagram.jpg?raw=true]()
+![image](https://github.com/langvt/STM32_Calender_clock/blob/main/block_diagram.jpg?raw=true)
 
-This project implements a door control system using RFID technology, STM32 microcontroller, SPI communication, and an SDCard for storage. When a valid RFID ID is detected, the system uses PWM to control a servo motor, opening the door by 90 degrees.
+This project implements count real-time (seconds, minutes, hours, day of the week, date, month, year), measure temperature, set alarm mode to control servo and led by using STM32 and the DS3231 module, then display it on an LCD screen like a clock. 
+We can adjust the time by pressing the button, including 2 modes: alarm time adjustment mode and normal time adjustment mode.
+- In alarm time setting mode, we adjust the set hour and minute before the timer, the word "alarm" will be displayed on the screen, then the servo will rotate and the LED light will flash for one minute.
+- In normal adjustment mode, we can adjust the time points to increase or decrease as desired
+In addition, the servo rotation angle can be adjusted when in normal mode via the potentiometer module
 
 ## Project Overview
 
@@ -10,13 +14,16 @@ This project implements a door control system using RFID technology, STM32 micro
 - RFID Module
 - STM32 Microcontroller
 - Servo Motor
-- SDCard Module
-- SPI Communication
+- led
+- LCD 20x4 module
+- Button(3 pieces)
+- I2C Communication
 
 ### Features:
-- RFID ID validation for access control.
-- Secure storage and retrieval of RFID IDs on an SDCard.
-- Utilization of PWM with STM32 for precise servo motor control.
-- Detailed SPI communication between components....
+- Utilization of PWM with STM32 for precise servo sg90 control.
+- Detailed I2c communication between components
+- DS3231 module to count real-time (seconds, minutes, hours, day of the week, date, month, year), measure temperature, set alarm mode to control servo and led
+- Buttons are used to adjust the time settings and enter the time adjustment mode in both the regular time setting mode and the alarm time setting mode. There are three buttons: one button to increase the time settings, one button to decrease the time settings, and one button to enter and exit the adjustment mode.
+- LCD to display information such as seconds, minutes, hours, day of the week, date, month, year, temperature, and other information.
 
 25/2

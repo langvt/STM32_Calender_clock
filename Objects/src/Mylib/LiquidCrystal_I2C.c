@@ -6,7 +6,6 @@
  */
 #include "LiquidCrystal_I2C.h"
 
-/************************ Low Level Function ***************************************************************/
 
 /*
  * Function: lcdDelay
