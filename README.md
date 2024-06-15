@@ -11,19 +11,20 @@ In addition, the servo rotation angle can be adjusted when in normal mode via th
 ## Project Overview
 
 ### Components Used:
-- RFID Module
-- STM32 Microcontroller
-- Servo Motor
+- STM32F103 Microcontroller
+- DS3231 module
+- Servo Sg90
+- Potentiometer
 - led
 - LCD 20x4 module
 - Button(3 pieces)
-- I2C Communication
+- I2C Communication, TIM, PWM and ADC on to STM32
 
 ### Features:
 - Utilization of PWM with STM32 for precise servo sg90 control.
-- Detailed I2c communication between components
+- Detailed I2C communication between components
 - DS3231 module to count real-time (seconds, minutes, hours, day of the week, date, month, year), measure temperature, set alarm mode to control servo and led
 - Buttons are used to adjust the time settings and enter the time adjustment mode in both the regular time setting mode and the alarm time setting mode. There are three buttons: one button to increase the time settings, one button to decrease the time settings, and one button to enter and exit the adjustment mode.
 - LCD to display information such as seconds, minutes, hours, day of the week, date, month, year, temperature, and other information.
-
+- Potentiometer To manually control the servo's rotation angle by using ADC
 25/2
