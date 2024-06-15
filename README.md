@@ -2,13 +2,16 @@
 
 ![image](https://github.com/langvt/STM32_Calender_clock/blob/main/block_diagram.jpg?raw=true)
 
+[Watch the video](https://youtu.be/8Gw6CeKGfP0)
+
+## Project Overview
+
+### Description:
 This project implements count real-time (seconds, minutes, hours, day of the week, date, month, year), measure temperature, set alarm mode to control servo and led by using STM32 and the DS3231 module, then display it on an LCD screen like a clock. 
 We can adjust the time by pressing the button, including 2 modes: alarm time adjustment mode and normal time adjustment mode.
 - In alarm time setting mode, we adjust the set hour and minute before the timer, the word "alarm" will be displayed on the screen, then the servo will rotate and the LED light will flash for one minute.
 - In normal adjustment mode, we can adjust the time points to increase or decrease as desired
 In addition, the servo rotation angle can be adjusted when in normal mode via the potentiometer module
-
-## Project Overview
 
 ### Components Used:
 - STM32F103 Microcontroller
